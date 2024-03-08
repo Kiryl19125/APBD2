@@ -2,6 +2,7 @@
 
 Console.WriteLine("Hello, World!");
 Console.WriteLine(GetAvg([1, 2, 3, 4, 5]));
+Console.WriteLine(GetMax([1, 2, 3, 4, 4, 666, 33, 5, 1]));
 
 return;
 
@@ -18,4 +19,19 @@ static float GetAvg(int[] arr)
     }
 
     return (float)sum / arr.Length;
+}
+
+static int GetMax(int[] arr)
+{
+    int max = arr[0];
+
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (max < arr[i])
+        {
+            max = arr[i];
+        }
+    }
+
+    return max;
 }
