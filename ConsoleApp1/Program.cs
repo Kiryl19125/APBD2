@@ -13,6 +13,7 @@ return;
 static float GetAvg(int[] arr)
 {
     int sum = 0;
+
     for (int k = 0; k < arr.Length; k++)
     {
         sum += arr[k];
